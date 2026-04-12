@@ -29,9 +29,33 @@
 		7FB7223C2F8ACDE9005B3C2D /* CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		7FB724422F8C2C38005B3C2D /* Exceptions for "Calculator" folder in "Calculator" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				TaxLogic.swift,
+			);
+			target = 7FB722212F8ACDE7005B3C2D /* Calculator */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		7FB724432F8C2C38005B3C2D /* Exceptions for "Calculator" folder in "Copy Bundle Resources" phase from "Calculator" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = 7FB722202F8ACDE7005B3C2D /* Resources */;
+			membershipExceptions = (
+				TaxLogic.swift,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		7FB722242F8ACDE7005B3C2D /* Calculator */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				7FB724422F8C2C38005B3C2D /* Exceptions for "Calculator" folder in "Calculator" target */,
+				7FB724432F8C2C38005B3C2D /* Exceptions for "Calculator" folder in "Copy Bundle Resources" phase from "Calculator" target */,
+			);
 			path = Calculator;
 			sourceTree = "<group>";
 		};
