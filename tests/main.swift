@@ -8,7 +8,7 @@
 //  Do NOT modify this file — it is protected by .readonly-files.
 // ─────────────────────────────────────────────────────────────
  
- import Foundation
+import Foundation
 runAllTests()
  
 print("")

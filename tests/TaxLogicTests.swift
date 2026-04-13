@@ -10,8 +10,8 @@ import Foundation
 
 // ── Assertion helper ─────────────────────────────────────────
 
-private var totalPass = 0
-private var totalFail = 0
+var totalPass = 0
+var totalFail = 0
 
 func assertEqual(
     _ name: String,
@@ -43,6 +43,8 @@ func assertTuple(
 }
 
 // ── Test cases ───────────────────────────────────────────────
+
+func runAllTests() {
 
 // 1. Basic calculation
 assertTuple(
@@ -118,7 +120,4 @@ if consistent {
     totalFail += 1
 }
 
-// ── Final summary for run_tests.sh ──────────────────────────
-print("")
-print("Total: \(totalPass) passed, \(totalFail) failed")
-exit(totalFail > 0 ? 1 : 0)
+}

@@ -23,7 +23,7 @@ echo "Found: $TAX_LOGIC"
 
 # ── Compile: TaxLogic + test harness ─────────────────────────
 BINARY="$(mktemp -d)/tax_tests"
-if ! swiftc "$TAX_LOGIC" tests/TaxLogicTests.swift -o "$BINARY" 2>&1; then
+if ! swiftc "$TAX_LOGIC" tests/main.swift tests/TaxLogicTests.swift -o "$BINARY" 2>&1; then
   echo ""
   echo "❌  Compilation failed — fix the Swift errors above."
   exit 1
