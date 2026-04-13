@@ -1,0 +1,23 @@
+───────────────────────────────
+#  .readonly-files
+#  DevSphere — Tax Calculator Task
+#
+#  Files listed here are checked by the CI workflows.
+#  Any modification to them will fail the "Read-Only Files" job.
+#  Participants should only edit:  Calculator/TaxLogic.swift
+# ─────────────────────────────────────────────────────────────
+
+# CI / grading pipeline
+.github/workflows/fork-ci.yml
+.github/workflows/pr-checks.yml
+.github/workflows/pr-grader.yml
+
+# Test harness
+tests/run_tests.sh
+tests/TaxLogicTests.swift
+
+# This file itself
+.readonly-files
+
+# SwiftUI view (UI must not change)
+Calculator/ContentView.swift
