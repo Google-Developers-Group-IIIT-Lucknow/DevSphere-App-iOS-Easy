@@ -14,7 +14,7 @@
 import Foundation
 
 func calculateTax(income: Double, taxRate: Double) -> (taxAmount: Double, netIncome: Double) {
-      taxAmount  = income * taxRate / 100
-      netIncome  = income - taxAmount
+      let taxAmount  = income * taxRate / 100.0
+      let netIncome  = income - taxAmount
     return (taxAmount, netIncome)
 }
