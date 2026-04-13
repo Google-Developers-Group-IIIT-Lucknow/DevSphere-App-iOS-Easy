@@ -12,8 +12,6 @@
 ///   - taxRate: Applicable tax rate as a percentage (e.g., pass 20 for 20 %).
 /// - Returns:   A tuple with the calculated `taxAmount` and the resulting `netIncome`.
 func calculateTax(income: Double, taxRate: Double) -> (taxAmount: Double, netIncome: Double) {
-    // ── TODO: implement the two lines below ──────────────────
-    //   taxAmount  = income × taxRate ÷ 100
-    //   netIncome  = income − taxAmount
+   
     return (0, 0)
 }

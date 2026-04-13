@@ -21,3 +21,4 @@ tests/TaxLogicTests.swift
 
 # SwiftUI view (UI must not change)
 Calculator/ContentView.swift
+tests/main.swift
