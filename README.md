@@ -47,6 +47,4 @@ This is where you need to implement all the logic. Ensure correct calculations b
 4. Push to the branch: `git push --set-upstream origin your-branch-name`
 5. Open a Pull Request
 
----
 
-*Made with ❤️ for DevSphere by Google Developer Groups IIIT Lucknow*
