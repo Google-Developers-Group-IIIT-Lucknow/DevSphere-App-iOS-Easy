@@ -13,6 +13,7 @@
 /// - Returns:   A tuple with the calculated `taxAmount` and the resulting `netIncome`.
 import Foundation
 func calculateTax(income: Double, taxRate: Double) -> (taxAmount: Double, netIncome: Double) {
-   
-    return (0, 0)
+    let taxAmount = income * (taxRate / 100)
+    let netIncome = income - taxAmount
+    return (taxAmount, netIncome)
 }
