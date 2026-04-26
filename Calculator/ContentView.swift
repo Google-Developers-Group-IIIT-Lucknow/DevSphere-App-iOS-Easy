@@ -6,11 +6,14 @@
 //
 
 import SwiftUI
+import Foundation
 
 struct ContentView: View {
     @State private var income = ""
     @State private var taxRate = ""
-
+    @State private var taxAmount: Double = 0
+    @State private var netIncome: Double = 0
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
             Text("Tax Calculator")
@@ -48,7 +51,14 @@ struct ContentView: View {
                 .shadow(color: .black.opacity(0.08), radius: 3, x: 0, y: 1)
                 .padding(.bottom, 40)
 
-            Button("Calculate Tax") {}
+            Button("Calculate Tax") {
+                let incomeValue = Double(income) ?? 0
+                let taxRateValue = Double(taxRate) ?? 0
+                let result = calculateTax(income: incomeValue, taxRate: taxRateValue)
+
+                taxAmount = result.taxAmount
+                netIncome = result.netIncome
+            }
                 .frame(maxWidth: .infinity)
                 .frame(height: 55)
                 .background(Color(hex: "0A7CFF"))
@@ -62,11 +72,11 @@ struct ContentView: View {
                     .font(.system(size: 18, weight: .bold))
                     .foregroundColor(Color(hex: "1C1E21"))
 
-                Text("Tax Amount: ₹ 0.00")
+                Text("Tax Amount: ₹\(taxAmount, specifier: "%.2f")")
                     .font(.system(size: 16))
                     .foregroundColor(Color(hex: "D93025"))
 
-                Text("Final Income: ₹ 0.00")
+                Text("Final Income: ₹\(netIncome, specifier: "%.2f")")
                     .font(.system(size: 18, weight: .bold))
                     .foregroundColor(Color(hex: "1E8E3E"))
             }

@@ -32,9 +32,6 @@
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
 		7FB724422F8C2C38005B3C2D /* Exceptions for "Calculator" folder in "Calculator" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				TaxLogic.swift,
-			);
 			target = 7FB722212F8ACDE7005B3C2D /* Calculator */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -43,9 +40,6 @@
 		7FB724432F8C2C38005B3C2D /* Exceptions for "Calculator" folder in "Copy Bundle Resources" phase from "Calculator" target */ = {
 			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
 			buildPhase = 7FB722202F8ACDE7005B3C2D /* Resources */;
-			membershipExceptions = (
-				TaxLogic.swift,
-			);
 		};
 /* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
 
